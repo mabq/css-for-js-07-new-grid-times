@@ -146,28 +146,27 @@ const TopRow = styled.div`
   padding: 24px 0;
 `;
 
-const Social = styled.div`
-  display: flex;
-  gap: 24px;
-
-  svg {
-    display: block;
-  }
-
-  path {
-    stroke-width: 1.5px;
-  }
-`;
-
 const TopNavList = styled.ul`
   display: flex;
   gap: 16px;
 `;
 
+const Social = styled.div`
+  display: flex;
+  gap: 24px;
+
+  & svg {
+    display: block;
+  }
+  & path {
+    stroke-width: 1.5px;
+  }
+`;
+
 const MainNavArea = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 48px;
   padding: 32px 0 48px;
   text-align: center;
 `;

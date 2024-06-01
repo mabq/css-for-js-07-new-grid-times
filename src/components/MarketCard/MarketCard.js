@@ -59,6 +59,7 @@ const Row = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 8px;
 `;
 
 const TickerSymbol = styled.p`

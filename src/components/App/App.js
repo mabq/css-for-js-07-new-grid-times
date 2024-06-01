@@ -7,18 +7,16 @@ import Spacer from '../Spacer';
 import MainStoryGrid from '../MainStoryGrid';
 import SpecialtyStoryGrid from '../SpecialtyStoryGrid';
 
-const App = () => {
-  return (
-    <>
-      <Header />
-      <MaxWidthWrapper as="main">
-        <MainStoryGrid />
-        <SpecialtyStoryGrid />
-      </MaxWidthWrapper>
-      <Spacer size={64} />
-      <Footer />
-    </>
-  );
-};
+const App = () => (
+  <>
+    <Header />
+    <MaxWidthWrapper as="main">
+      <MainStoryGrid />
+      <SpecialtyStoryGrid />
+    </MaxWidthWrapper>
+    <Spacer size={64} />
+    <Footer />
+  </>
+);
 
 export default App;
