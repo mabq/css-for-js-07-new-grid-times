@@ -2,8 +2,9 @@ import React from 'react';
 import { Twitter, Facebook } from 'react-feather';
 import styled from 'styled-components/macro';
 import MaxWidthWrapper from '../MaxWidthWrapper';
-
 import VisuallyHidden from '../VisuallyHidden';
+
+import { QUERIES } from '../../constants';
 
 const Footer = () => {
   return (
@@ -26,15 +27,15 @@ const Footer = () => {
           <Social>
             <a href="/">
               <VisuallyHidden>
-                Visit The Grid Times on Facebook
-              </VisuallyHidden>
-              <Facebook size={20} />
-            </a>
-            <a href="/">
-              <VisuallyHidden>
                 Visit The Grid Times on Twitter
               </VisuallyHidden>
               <Twitter size={20} />
+            </a>
+            <a href="/">
+              <VisuallyHidden>
+                Visit The Grid Times on Facebook
+              </VisuallyHidden>
+              <Facebook size={20} />
             </a>
           </Social>
         </TopRow>
@@ -144,6 +145,16 @@ const TopRow = styled.div`
   font-size: 0.875rem;
   border-bottom: 1px solid var(--color-gray-700);
   padding: 24px 0;
+
+  @media ${QUERIES.tabletAndUp} {
+    flex-direction: row;
+    justify-content: center;
+    gap: 48px; 
+  }
+
+  @media ${QUERIES.laptopAndUp} {
+    justify-content: flex-end;
+  }
 `;
 
 const TopNavList = styled.ul`
@@ -169,6 +180,17 @@ const MainNavArea = styled.div`
   gap: 48px;
   padding: 32px 0 48px;
   text-align: center;
+
+  @media ${QUERIES.tabletAndUp} {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 36px 85px;
+    text-align: left;
+    & > nav {
+      flex: 1;
+      white-space: nowrap;
+    }
+  }
 `;
 
 const MainNavHeading = styled.h2`
@@ -195,6 +217,9 @@ const Subfooter = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media ${QUERIES.laptopAndUp} {
+    align-items: flex-start;
+  }
 `;
 
 const Logo = styled.a`
