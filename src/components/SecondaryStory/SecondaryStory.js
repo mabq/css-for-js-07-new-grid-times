@@ -24,7 +24,7 @@ const Wrapper = styled.article`
   grid-template-columns: 120px 1fr;
   color: var(--color-gray-900);
 
-  @media ${QUERIES.tabletAndUp} {
+  @media ${QUERIES.tabletOnly} {
     grid-template-columns: 1fr;
     grid-template-areas:
       'image'
@@ -50,7 +50,7 @@ const Heading = styled.h2`
   /* Optical alignment */
   margin-top: -2px;
 
-  @media ${QUERIES.tabletAndUp} {
+  @media ${QUERIES.tabletOnly} {
     margin-top: 6px;
   }
 `;
