@@ -1,0 +1,17 @@
+.max-width-wrapper {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro-chunk {
+  padding-top: 96px;
+  padding-bottom: 64px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 900;
+}

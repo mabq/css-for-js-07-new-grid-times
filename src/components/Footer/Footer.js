@@ -1,10 +1,10 @@
-import React from 'react';
-import { Twitter, Facebook } from 'react-feather';
-import styled from 'styled-components/macro';
-import MaxWidthWrapper from '../MaxWidthWrapper';
-import VisuallyHidden from '../VisuallyHidden';
+import React from "react";
+import { Twitter, Facebook } from "react-feather";
+import styled from "styled-components/macro";
+import MaxWidthWrapper from "../MaxWidthWrapper";
+import VisuallyHidden from "../VisuallyHidden";
 
-import { QUERIES } from '../../constants';
+import { QUERIES } from "../../constants";
 
 const Footer = () => {
   return (
@@ -26,15 +26,11 @@ const Footer = () => {
           </nav>
           <Social>
             <a href="/">
-              <VisuallyHidden>
-                Visit The Grid Times on Twitter
-              </VisuallyHidden>
+              <VisuallyHidden>Visit The Grid Times on Twitter</VisuallyHidden>
               <Twitter size={20} />
             </a>
             <a href="/">
-              <VisuallyHidden>
-                Visit The Grid Times on Facebook
-              </VisuallyHidden>
+              <VisuallyHidden>Visit The Grid Times on Facebook</VisuallyHidden>
               <Facebook size={20} />
             </a>
           </Social>
@@ -149,7 +145,7 @@ const TopRow = styled.div`
   @media ${QUERIES.tabletAndUp} {
     flex-direction: row;
     justify-content: center;
-    gap: 48px; 
+    gap: 48px;
   }
 
   @media ${QUERIES.laptopAndUp} {
@@ -158,7 +154,7 @@ const TopRow = styled.div`
 `;
 
 const TopNavList = styled.ul`
-  display: flex;
+    display: flex;
   gap: 16px;
 `;
 

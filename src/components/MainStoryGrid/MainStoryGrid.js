@@ -1,18 +1,14 @@
-import React from 'react';
-import styled from 'styled-components/macro';
+import React from "react";
+import styled from "styled-components/macro";
 
-import {
-  MAIN_STORY,
-  SECONDARY_STORIES,
-  OPINION_STORIES,
-} from '../../data';
-import { QUERIES } from '../../constants';
+import { MAIN_STORY, SECONDARY_STORIES, OPINION_STORIES } from "../../data";
+import { QUERIES } from "../../constants";
 
-import SectionTitle from '../SectionTitle';
-import MainStory from '../MainStory';
-import SecondaryStory from '../SecondaryStory';
-import OpinionStory from '../OpinionStory';
-import Advertisement from '../Advertisement';
+import SectionTitle from "../SectionTitle";
+import MainStory from "../MainStory";
+import SecondaryStory from "../SecondaryStory";
+import OpinionStory from "../OpinionStory";
+import Advertisement from "../Advertisement";
 
 const MainStoryGrid = () => {
   return (
@@ -115,7 +111,7 @@ const VerticalSeparatorWrapper = styled.div`
     margin-bottom: 16px;
     border-bottom: 1px solid var(--color-gray-300);
   }
-`
+`;
 
 const VeriticalSeparatorWrapperOpinions = styled(VerticalSeparatorWrapper)`
   flex: 1;
@@ -126,7 +122,7 @@ const VeriticalSeparatorWrapperOpinions = styled(VerticalSeparatorWrapper)`
       border-bottom: none;
     }
   }
-`
+`;
 
 const OpinionSection = styled.section`
   grid-area: opinion-stories;

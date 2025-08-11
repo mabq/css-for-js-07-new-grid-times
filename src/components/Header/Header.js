@@ -1,12 +1,12 @@
-import React from 'react';
-import styled from 'styled-components/macro';
-import { Menu, Search, User } from 'react-feather';
+import React from "react";
+import styled from "styled-components/macro";
+import { Menu, Search, User } from "react-feather";
 
-import { QUERIES, WEIGHTS, FAMILIES } from '../../constants';
+import { QUERIES, WEIGHTS, FAMILIES } from "../../constants";
 
-import MaxWidthWrapper from '../MaxWidthWrapper';
-import Logo from '../Logo';
-import Button from '../Button';
+import MaxWidthWrapper from "../MaxWidthWrapper";
+import Logo from "../Logo";
+import Button from "../Button";
 
 const Header = () => {
   return (
@@ -95,7 +95,7 @@ const MainHeaderLaptopAndUp = styled(MaxWidthWrapper)`
 
 const ActionGroupDesktop = styled(ActionGroup)`
   padding-top: 6px;
-`
+`;
 
 const SubscribeGroup = styled.div`
   display: flex;
@@ -113,7 +113,6 @@ const LoginLink = styled.a`
   font-size: 14px;
   color: var(--color-gray-900);
   text-decoration: underline;
-`
+`;
 
 export default Header;
-
